@@ -200,7 +200,6 @@ class Modmail(commands.Bot):
 
 
     @commands.command(name='close')
-    @commands.has_permissions(manage_guild=True)
     async def _close(self, ctx):
         '''Close the current thread.'''
         if 'User ID:' not in str(ctx.channel.topic):
